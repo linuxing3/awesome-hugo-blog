@@ -1,0 +1,44 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-ipython-with-lsp.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2020-05-01T20:03:50-04:00"
+tags:
+ - emacs python
+---
+
+* Skills
+
+Using Ipython within org
+
+#+BEGIN_SRC python
+    import sys
+    sys.version
+#+END_SRC
+
+* Lsp
+
+Already included int the recent PR of `doom-emacs`
+
+#+BEGIN_SRC emacs-lsp
+    (def-package! lsp-typescript
+      :when (featurep! +lsp)
+      :when (featurep! :feature-x lsp)
+      :hook ((js2-mode web-mode typescript-mode) . lsp-typescript-enable))
+
+    (def-package! tide
+      :config
+      (map! :map tide-mode-map
+          :localleader
+          :n "R" #'tide-restart-server
+          :n "E" #'tide-project-errors
+          :n "D" #'tide-documentation-at-point
+          :n "o" #'tide-organize-imports
+          :n "d" #'tide-jsdoc-template
+          :n "F" #'tide-refactor
+          :n "X" #'tide-fix
+          :n "s" #'tide-rename-symbol
+          :n "f" #'tide-rename-file))
+#+END_SRC

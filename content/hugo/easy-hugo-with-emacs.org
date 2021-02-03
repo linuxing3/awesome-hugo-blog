@@ -1,0 +1,21 @@
+---
+title: "Easy Hugo With Emacs"
+date: "2018-02-16T20:03:50-04:00"
+draft: false
+---
+
+** Hugo Tips
+
+---
+title: "Easy Hugo With Emacs"
+date: "2018-02-16T20:03:50-04:00"
+draft: false
+---
+
+**** If use equal sign, must leave no space
+
+---
+title="Easy Hugo With Emacs"
+date="2018-02-16T20:03:50-04:00"
+draft=false
+---
