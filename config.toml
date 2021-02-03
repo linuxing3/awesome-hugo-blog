@@ -1,6 +1,7 @@
 baseURL = "https://linuxing3.github.io"
-languageCode = "en"
-DefaultContentLanguage = "en"
+#baseURL = "http://127.0.0.1:1313"
+languageCode = "cn"
+DefaultContentLanguage = "cn"
 title = "Journal of Emacser and Vimers"
 theme = "anatole"
 summarylength = 10
@@ -83,7 +84,7 @@ url = "mailto:linuxing3@qq.com"
   name = "Posts"
   weight = 200
   identifier = "posts"
-  url = "/post/"
+  url = "/posts/"
 
   [[menu.main]]
   name = "About"
