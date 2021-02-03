@@ -26,11 +26,9 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: hugo-deploy
-        # You may pin to the exact commit or the version.
-        # uses: reuixiy/hugo-deploy@1185ce893b699b1809ec27bebcd8212a8127fefa
         uses: reuixiy/hugo-deploy@v1
         env:
           DEPLOY_REPO: linuxing3/linuxing3.github.io
           DEPLOY_BRANCH: master
-          DEPLOY_KEY: ${{ secrets.DEPLOY_TOKEN }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           TZ: Asia/Shanghai
