@@ -30,5 +30,6 @@ jobs:
         env:
           DEPLOY_REPO: linuxing3/linuxing3.github.io
           DEPLOY_BRANCH: master
+          # Please add DEPLOY_KEY with your id_rsa private key
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           TZ: Asia/Shanghai
