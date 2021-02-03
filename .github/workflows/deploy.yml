@@ -1,8 +1,5 @@
 name: deploy hugo on gh pages
 
-env:
-  SSH_ACTIONS: false
-
 on:
   push:
     branches:
@@ -14,14 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          ref: master
+          ref: main
           submodules: true
-      - name: Deploy public to master
+      - name: Deploy public to main
         uses: linuxing3/gh-action-hugo-deploy@master
         with:
           destination_repo: linuxing3/linuxing3.github.io
           destination_token: ${{ secrets.DEPLOY_TOKEN }}
           build_dir: "public"
-      - name: SSH connection to Actions # in case you want interactive shell
-        uses: P3TERX/debugger-action@master
-        if: env.SSH_ACTIONS == 'true'
