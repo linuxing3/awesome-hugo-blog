@@ -1,0 +1,58 @@
+baseURL = "https://linuxing3.github.io"
+#baseURL = "http://127.0.0.1:1313"
+languageCode = "cn"
+DefaultContentLanguage = "cn"
+title = "Journal of Emacser and Vimers"
+theme = "m10c"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+
+[params]
+  author = "linuxing3"
+  description = "Journal of Emacser and Vimers"
+  menu_item_separator = " - "
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/linuxing3"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/linuxing3"
+
+  # Brown theme
+  #[params.style]
+  #  darkestColor = "#463625"
+  #  darkColor = "#2a3738"
+  #  primaryColor = "#eeee6a"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#ffffff"
+
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  primaryColor = "#dad865"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+
+  # Red and black theme
+  [params.style]
+    darkestColor = "#d35050"
+    darkColor = "#212121"
+    primaryColor = "#ffffff"
+    lightColor = "#a2a2a2"
+    lightestColor = "#d3d3d3"
