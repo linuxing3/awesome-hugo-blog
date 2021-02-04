@@ -32,7 +32,7 @@ params:
 menu:
   nav:
     - name: Home
-      url: /
+      url: /posts/
       weight: 1
     - name: Blog
       url: /posts/
@@ -40,8 +40,8 @@ menu:
     - name: Tags
       url: /tags/
       weight: 3
-    - name: About
-      url: /about/
+    - name: Netlify
+      url: https://gridsome.netlify.com
       weight: 4
     - name: RSS
       url: /index.xml
