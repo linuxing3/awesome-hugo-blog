@@ -1,0 +1,46 @@
+#+title: Using Org Mode in Hugo
+#+subtitle: emacs everywhere
+#+date: 2021-02-03
+#+tags[]: howto, emacs, hugo
+#+testparam: linuxing3
+
+* Integrations
+Hugo has .org file support natively, which is what I'll be using. There are other options out there, ox-hugo being the big one. This will let you write in org and then export into a .md file that hugo understands and gives you more control of the output. Check that out if you have additional needs that are required.
+
+* Front matter
+While Hugo has front matter, you can easily translate that into org-mode document properties. For example, this is what is on the top of this file:
+
+#+begin_src org
+  #+title: Using Org Mode in Hugo
+  #+subtitle: emacs everywhere
+  #+date: 2019-08-02
+  #+tags[]: howto, emacs, hugo
+#+end_src org
+
+Which maps pretty directly to the toml front matter.
+
+* Gist 
+{{< gist spf13 7896402 >}}
+
+* highlight
+{{< highlight html >}}
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+{{< /highlight >}}
+
+* Youtube
+
+{{< youtube w7Ft2ymGmfc >}}
+
+* params
+
+{{< param testparam >}}
+
+
+* Archtypes
