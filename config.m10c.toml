@@ -1,5 +1,5 @@
-baseURL = "https://linuxing3.github.io"
-#baseURL = "http://127.0.0.1:1313"
+#baseURL = "https://linuxing3.github.io"
+baseURL = "http://127.0.0.1:1313"
 languageCode = "cn"
 DefaultContentLanguage = "cn"
 title = "Journal of Emacser and Vimers"
@@ -12,19 +12,29 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "home"
     name = "Home"
+    weight = 100
     url = "/"
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
-    url = "/posts"
+    weight = 200
+    url = "/posts/"
+  [[menu.main]]
+    identifier = "netlify"
+    name = "Netlify"
+    weight = 300
+    url = "https://gridsome.netlify.com"
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
+    weight = 400
     url = "/tags/"
 
 [params]
   author = "linuxing3"
   description = "Journal of Emacser and Vimers"
+  copyright = "2020-2021"
+  avatar = "images/profile.jpg"
   menu_item_separator = " - "
   [[params.social]]
     name = "github"
@@ -50,9 +60,9 @@ enableRobotsTXT = true
   #  lightestColor = "#fff"
 
   # Red and black theme
-  [params.style]
-    darkestColor = "#d35050"
-    darkColor = "#212121"
-    primaryColor = "#ffffff"
-    lightColor = "#a2a2a2"
-    lightestColor = "#d3d3d3"
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  primaryColor = "#ffffff"
+  #  lightColor = "#a2a2a2"
+  #  lightestColor = "#d3d3d3"
