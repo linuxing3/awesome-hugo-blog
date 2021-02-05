@@ -1,7 +1,6 @@
 +++
 title="browserify.md"
 date="2018-02-16T14:05:34-04:00"
-tags: [node, module, tutorial]
 +++
 # browserify
 

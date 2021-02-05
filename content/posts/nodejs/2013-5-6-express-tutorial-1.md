@@ -1,7 +1,6 @@
 +++
 title="2013-5-6-express-tutorial-1.md"
 date="2018-02-16T14:05:34-04:00"
-tags: [node, module, tutorial]
 +++
 ---
 layout: post

@@ -1,7 +1,6 @@
 +++
 title="go module tutorial"
 date="2020-02-05T14:05:34-04:00"
-tags: [go, module, tutorial]
 +++
 
 # Go Module 工程模块化
