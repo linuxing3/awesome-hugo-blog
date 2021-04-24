@@ -58,7 +58,7 @@ C\C++\Java\Swift等，更接近人类自然语言
 ![address](https://lvchenqiang.github.io/lvchenqiang.github.io/2019/03/31/%E6%B1%87%E7%BC%96%E7%AE%80%E4%BB%8B/Snip20190331_47.png)
 
 寻址计算
-![address calculating](https://lvchenqiang.github.io/lvchenqiang.github.io/2019/03/31/%E6%B1%87%E7%BC%96%E7%AE%80%E4%BB%8B/Snip20190331_48.png)
+      ![address calculating](https://lvchenqiang.github.io/lvchenqiang.github.io/2019/03/31/%E6%B1%87%E7%BC%96%E7%AE%80%E4%BB%8B/Snip20190331_48.png)
 
 不同的寻址方式
 
