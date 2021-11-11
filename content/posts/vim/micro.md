@@ -1,6 +1,6 @@
 ---
-date = "2021-02-16T14:06:05-04:00"
-title = "Micro but awesome editor"
+date: "2021-02-16T14:06:05-04:00"
+title: "Micro but awesome editor"
 ---
 
 <img alt="micro logo" src="C:/Users/Administrator/go/src/github.com/linuxing3/micro/assets/micro-logo.svg" width="500px"/>

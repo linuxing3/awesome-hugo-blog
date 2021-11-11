@@ -1,6 +1,6 @@
 ---
-title="goful awesome finder"
-date="2020-02-05T14:05:34-04:00"
+title: "goful awesome finder"
+date: "2020-02-05T14:05:34-04:00"
 ---
 
 G# Goful
