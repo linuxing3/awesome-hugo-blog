@@ -5,72 +5,79 @@ date = 2021-11-11T00:00:00-04:00
 draft = false
 +++
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ´´½¨»î¶¯Ê±¼ä´Á {#´´½¨»î¶¯Ê±¼ä´Á}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> åˆ›å»ºæ´»åŠ¨æ—¶é—´æˆ³ {#åˆ›å»ºæ´»åŠ¨æ—¶é—´æˆ³}
 
-`Org mode` Ê¶±ğ×¨ÃÅ±êÊ¶µÄÊ±¼ä´Á
+`Org mode` è¯†åˆ«ä¸“é—¨æ ‡è¯†çš„æ—¶é—´æˆ³
 
 -   C-c . (org-time-stamp)
 
-ÌáÊ¾ÈÕÆÚºÍÊ±¼ä¡£Èç¹ûÊ±¼ä´ÁÒÑ¾­´æÔÚ£¬½øĞĞĞŞ¸Ä¡£
-Á¬ĞøÊäÈë2´Î£¬²åÈëÊ±¼ä¶Î¡£
+æç¤ºæ—¥æœŸå’Œæ—¶é—´ã€‚å¦‚æœæ—¶é—´æˆ³å·²ç»å­˜åœ¨ï¼Œè¿›è¡Œä¿®æ”¹ã€‚
 
-Prompt for a date and insert a corresponding timestamp.  When point
-is at an existing timestamp in the buffer, the command is used to
-modify this timestamp instead of inserting a new one.  When this
-command is used twice in succession, a time range is inserted.
+è¿ç»­è¾“å…¥2æ¬¡ï¼Œæ’å…¥æ—¶é—´æ®µã€‚
 
-Èç¹û°üÀ¨Ç°×º£¬Õâ²ÉÓÃÌæ´ú¸ñÊ½¡£Ä¬ÈÏÊ±¼ä¿ÉÒÔÒÔ5·ÖÖÓ±¶ÊıµÄĞÎÊ½È¡Õû¡£
+Prompt for a date and insert a corresponding timestamp.
+
+When point is at an existing timestamp in the buffer, the command is
+used to modify this timestamp instead of inserting a new one.
+
+When this command is used twice in succession, a time range is
+inserted
+
+å¦‚æœåŒ…æ‹¬å‰ç¼€ï¼Œè¿™é‡‡ç”¨æ›¿ä»£æ ¼å¼ã€‚é»˜è®¤æ—¶é—´å¯ä»¥ä»¥5åˆ†é’Ÿå€æ•°çš„å½¢å¼å–æ•´ã€‚
+
 When called with a prefix argument, use the alternative format which
-contains date and time.  The default time can be rounded to
-multiples of 5 minutes.  See the option
-org-time-stamp-rounding-minutes.
+contains date and time.
 
-Èç¹ûÓĞ2¸öÇ°×º²ÎÊı£¬²åÈë»î¶¯Ê±¼ä´Á£¬ÎŞÈÎºÎÌáÊ¾¡£
+The default time can be rounded to multiples
+of 5 minutes.  See the option org-time-stamp-rounding-minutes
 
-With two prefix arguments, insert an active timestamp with the
-current time without prompting.
+å¦‚æœæœ‰2ä¸ªå‰ç¼€å‚æ•°ï¼Œæ’å…¥æ´»åŠ¨æ—¶é—´æˆ³ï¼Œæ— ä»»ä½•æç¤ºã€‚
+
+With two prefix arguments, insert an active timestamp with the current
+time without prompting.
 
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ²åÈë·Ç»î¶¯Ê±¼ä´Á {#²åÈë·Ç»î¶¯Ê±¼ä´Á}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> æ’å…¥éæ´»åŠ¨æ—¶é—´æˆ³ {#æ’å…¥éæ´»åŠ¨æ—¶é—´æˆ³}
 
 C-c ! (org-time-stamp-inactive)
 
-Like C-c ., but insert an inactive timestamp that does
-not cause an agenda entry.
+Like C-c ., but insert an inactive timestamp that does not cause an
+agenda entry.
 
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ĞŞÕı»¯Ê±¼ä´Á {#ĞŞÕı»¯Ê±¼ä´Á}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> ä¿®æ­£åŒ–æ—¶é—´æˆ³ {#ä¿®æ­£åŒ–æ—¶é—´æˆ³}
 
 C-c C-c
 
-Èç·¢ÏÖÊ±¼äÈ·Êµ»ò´íÎó£¬³¢ÊÔ²åÈë»ò¸üÕıÊ±¼ä
+å¦‚å‘ç°æ—¶é—´ç¡®å®æˆ–é”™è¯¯ï¼Œå°è¯•æ’å…¥æˆ–æ›´æ­£æ—¶é—´
+
 Normalize timestamp, insert or fix day name if missing or wrong.
 
 
-## ´ÓÈÕÀú»ñÈ¡ÈÕÆÚ {#´ÓÈÕÀú»ñÈ¡ÈÕÆÚ}
+## ä»æ—¥å†è·å–æ—¥æœŸ {#ä»æ—¥å†è·å–æ—¥æœŸ}
 
 C-c < (org-date-from-calendar)
 
 Insert a timestamp corresponding to point date in the calendar.
 
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ·ÃÎÊÈÕÀúÖĞµÄÈÕÆÚ {#·ÃÎÊÈÕÀúÖĞµÄÈÕÆÚ}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> è®¿é—®æ—¥å†ä¸­çš„æ—¥æœŸ {#è®¿é—®æ—¥å†ä¸­çš„æ—¥æœŸ}
 
 C-c > (org-goto-calendar)
 
-Access the Emacs calendar for the current date.  If there is
-a timestamp in the current line, go to the corresponding date
-instead
+Access the Emacs calendar for the current date.  If there is a
+timestamp in the current line, go to the corresponding date instead
 
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ´ò¿ª£Á£ç£å£î£ä£áĞĞÊÂÀú {#´ò¿ª£á£ç£å£î£ä£áĞĞÊÂÀú}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> æ‰“å¼€ï¼¡ï½‡ï½…ï½ï½„ï½è¡Œäº‹å† {#æ‰“å¼€ï½ï½‡ï½…ï½ï½„ï½è¡Œäº‹å†}
 
 C-c C-o (org-open-at-point)
+
 Access the agenda for the date given by the timestamp or -range at
 point (see Weekly/daily agenda).
 
 
-## <span class="org-todo todo ____">[Ñ§Ï°]</span> ¼ÓÒ»Ìì/¼õÒ»Ìì {#¼ÓÒ»Ìì-¼õÒ»Ìì}
+## <span class="org-todo todo ____">[å­¦ä¹ ]</span> åŠ ä¸€å¤©/å‡ä¸€å¤© {#åŠ ä¸€å¤©-å‡ä¸€å¤©}
 
 S-LEFT (org-timestamp-down-day)
 S-RIGHT (org-timestamp-up-day)
@@ -79,29 +86,35 @@ Change date at point by one day.  These key bindings conflict with
 shift-selection and related modes (see Conflicts).
 
 
-## <span class="org-todo todo _BUG_">[BUG]</span> ¼ÓÊ±¼ä/¼õÊ±¼ä {#¼ÓÊ±¼ä-¼õÊ±¼ä}
+## <span class="org-todo todo _BUG_">[BUG]</span> åŠ æ—¶é—´/å‡æ—¶é—´ {#åŠ æ—¶é—´-å‡æ—¶é—´}
 
 S-UP (org-timestamp-up)
 S-DOWN (org-timestamp-down)
 
-Èç¹â±êÔÚÊ±¼ä´Á¿ªÊ¼»òÕßÀ¨ºÅ´¦£¬¿ÉÒÔĞŞ¸ÄÀàĞÍ¡£ÔÚÊ±¼ä´ÁÄÚ²¿£¬ĞŞ¸ÄËùÔÚµãµÄ
-ÄÚÈİ¡£Ã¿¸öµã¿ÉÒÔÊÇÄêÔÂÈÕµÈÊ±¼äµ¥Î»¡£Èç¹ûÊÇÊ±¼ä¶Î£¬ĞŞ¸Ä¿ªÊ¼Ê±¼ä½«¸Ä±ä½áÊøÊ±¼ä¡£
+å¦‚å…‰æ ‡åœ¨æ—¶é—´æˆ³å¼€å§‹æˆ–è€…æ‹¬å·å¤„ï¼Œå¯ä»¥ä¿®æ”¹ç±»å‹ã€‚åœ¨æ—¶é—´æˆ³å†…éƒ¨ï¼Œä¿®æ”¹æ‰€åœ¨ç‚¹çš„
+å†…å®¹ã€‚æ¯ä¸ªç‚¹å¯ä»¥æ˜¯å¹´æœˆæ—¥ç­‰æ—¶é—´å•ä½ã€‚å¦‚æœæ˜¯æ—¶é—´æ®µï¼Œä¿®æ”¹å¼€å§‹æ—¶é—´å°†æ”¹å˜ç»“æŸæ—¶é—´ã€‚
 
-On the beginning or enclosing bracket of a timestamp, change its
-type.  Within a timestamp, change the item under point.  Point can be
-on a year, month, day, hour or minute.  When the timestamp contains a
-time range like ¡®15:30-16:30¡¯, modifying the first time also shifts
-the second, shifting the time block with constant length.  To change
-the length, modify the second time.  Note that if point is in a
-headline and not at a timestamp, these same keys modify the priority
-of an item (see Priorities).  The key bindings also conflict with
-shift-selection and related modes (see Conflicts)
+On the beginning or enclosing bracket of a timestamp, change its type.
+Within a timestamp, change the item under point.
+
+Point can be on a year, month, day, hour or minute.  When the
+timestamp contains a time range like â€˜15:30-16:30â€™, modifying the
+first time also shifts the second, shifting the time block with
+constant length.  To change the length, modify the second time.
+
+Note that if point is in a headline and not at a timestamp, these same
+keys modify the priority of an item (see Priorities).
+
+The key bindings also conflict with shift-selection and related modes
+(see Conflicts)
 
 
-## ÑéÖ¤Ê±¼ä¶Î {#ÑéÖ¤Ê±¼ä¶Î}
+## éªŒè¯æ—¶é—´æ®µ {#éªŒè¯æ—¶é—´æ®µ}
 
 C-c C-y (org-evaluate-time-range)
 
 Evaluate a time range by computing the difference between start and
-end.  With a prefix argument, insert result after the time range (in
-a table: into the following column).
+end.
+
+With a prefix argument, insert result after the time range (in a
+table: into the following column).

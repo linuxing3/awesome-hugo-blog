@@ -1,5 +1,5 @@
 baseurl = "/"
-languageCode = "en-us"
+languageCode = "zh-cn"
 theme = "terminal"
 paginate = 5
 
@@ -9,13 +9,13 @@ paginate = 5
   contentTypeName = "posts"
 
   # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+  themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
 
   # show selector to switch language
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   # set theme to full screen width
   fullWidthTheme = true
@@ -53,8 +53,8 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Vim Emacser的个人博客"
-    subtitle = "各种关于生活的记录"
+    title = "Vim Emacser Personal Blog"
+    subtitle = "Note about life"
     owner = "linuxing3"
     keywords = ""
     copyright = "@linuxing3"
@@ -78,4 +78,33 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
+        url = "/showcase"
+
+  [languages.zh]
+    languageName = "中文"
+    title = "Vim Emacser的个人博客"
+    subtitle = "各种关于生活的记录"
+    owner = "linuxing3"
+    keywords = ""
+    copyright = "@linuxing3"
+    menuMore = "显示更多"
+    readMore = "继续阅读"
+    readOtherPosts = "阅读其他博文"
+    newerPosts = "更新博文"
+    olderPosts = "更旧博文"
+    missingContentMessage = "页面没有找到"
+    missingBackButtonLabel = "返回主页"
+
+    [languages.zh.params.logo]
+      logoText = "酷炫终端"
+      logoHomeLink = "/"
+
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = "journal"
+        name = "日志"
+        url = "/journal"
+      [[languages.zh.menu.main]]
+        identifier = "showcase"
+        name = "展示"
         url = "/showcase"
