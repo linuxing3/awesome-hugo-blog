@@ -1,0 +1,58 @@
+---
+templateKey: blog-post|doc-page
+title: "using-orgmode-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2021-02-16T14:06:05-04:00"
+tags:
+ - hugo emacs
+---
+
+#+TITLE: Make better emacs workflow
+#+AUTHOR: linuxing3
+#+EMAIL: linuxing3@qq.com
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+CREATOR: Emacs 24.3.50.3 (Org mode 8.0.3)
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+* [BUG] Better emacs
+** [BUG] 无法更新 =evil emacs submodule=
+** [已修复] 更好地进行博客日志写作和发布
+*** [学习] 书写博客的内容
+*** [学习] 插入 =plantuml= 图片
+*** [学习] 生成 =png= 图片到 =OneDrive/org/assets/images= 目录下
+*** [学习] 发布 =blog= 项目到 =workspace/github.io/blog= 目录下
+*** [学习] 发布 =images= 项目到 =workspace/github.io/assets/images= 目录下
+*** [BUG] 发布 =css= 项目到 =workspace/github.io/assets/css= 目录下
+*** [学习] 浏览你的博客!!!
+
+* 观看新闻联播
+
+** 祝贺新华社成立90周年
+
+* 深入打好污染防治攻坚战
+
+* ❄ 首次降雪
+
+* 制作微信电子相册
+
+#+BEGIN_SRC plantuml :file ../assets/images/weichat_digital_album.png
+     (*) --> "Order with 1 Yuan"
+     --> "Get Order Id"
+     --> "Get Design Id with Order Id"
+     --> "Add wechat bot helper"
+     --> "Login with cellphone and design id "
+     --> "Start Designing"
+     --> "Select styles"
+     --> "Confirm design and print"
+#+END_SRC
+
+#+RESULTS:
+[[file:../assets/images/weichat_digital_album.png]]

@@ -1,0 +1,110 @@
+baseurl = "/"
+languageCode = "zh-cn"
+theme = "terminal"
+paginate = 5
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+
+  # show selector to switch language
+  showLanguageSelector = true
+
+  # set theme to full screen width
+  fullWidthTheme = true
+
+  # center theme with default width
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  oneHeadingSize = false
+
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = "linuxing3"
+  site = "https://twitter.com/linuxing3"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Vim Emacser Personal Blog"
+    subtitle = "Note about life"
+    owner = "linuxing3"
+    keywords = ""
+    copyright = "@linuxing3"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Terminal"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "journal"
+        name = "Journal"
+        url = "/journal"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
+
+  [languages.zh]
+    languageName = "中文"
+    title = "Vim Emacser的个人博客"
+    subtitle = "各种关于生活的记录"
+    owner = "linuxing3"
+    keywords = ""
+    copyright = "@linuxing3"
+    menuMore = "显示更多"
+    readMore = "继续阅读"
+    readOtherPosts = "阅读其他博文"
+    newerPosts = "更新博文"
+    olderPosts = "更旧博文"
+    missingContentMessage = "页面没有找到"
+    missingBackButtonLabel = "返回主页"
+
+    [languages.zh.params.logo]
+      logoText = "酷炫终端"
+      logoHomeLink = "/"
+
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = "journal"
+        name = "日志"
+        url = "/journal"
+      [[languages.zh.menu.main]]
+        identifier = "showcase"
+        name = "展示"
+        url = "/showcase"

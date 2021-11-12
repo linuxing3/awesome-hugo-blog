@@ -1,6 +1,6 @@
 #+title: Using Org Mode in Hugo
 #+subtitle: emacs everywhere
-#+date: 2021-02-03
+#+date: 2018-02-16T20:03:50-04:00
 #+tags[]: howto, emacs, hugo
 #+testparam: linuxing3
 
