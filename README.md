@@ -12,19 +12,21 @@ From the root of your site:
 ```sh
 git submodule add https://github.com/zwbetz-gh/cupper-hugo-theme.git themes/cupper-hugo-theme
 ```
+
 Updating 
 From the root of your site:
 
 ```sh
+git submodule init
 git submodule update --remote --merge
 ```
 
-Run example site 
-```sh
 From the root of themes/cupper-hugo-theme/exampleSite:
-```
+
+```sh
 hugo server --themesDir ../..
 ```
 
 ### Configuration 
-Copy config.yaml from the exampleSite, then edit as desired.
+
+Copy `config.yaml` from the exampleSite, then edit as desired.
